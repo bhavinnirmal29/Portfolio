@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Animation Link -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="css/animate.css">
+		<style>
+			/*.bg-color
+			{
+				background-color: black;
+				opacity: 0.9;
+			}*/
+			/*html
+			{
+				scroll-behavior: smooth;
+
+			}*/
+			.navbar
+			{
+				background-color: #000 !important;
+			}
+			.link-color
+			{
+				color: #fff;
+				font-size: 18px;
+				transition-duration: 0.5s;
+			}
+			.link-color:hover
+			{
+				color: #2196f3;
+				transition-duration: 0.5s;
+			}
+			ul.navmenu-1 li.active a{
+				color:#2196f3;
+				border-radius: 10px;
+				border: 2px solid  white;
+			}
+			.navbar-brand1
+			{
+				font-size: 26px;
+				color: #fff;
+				transition-duration: 0.5s;
+			}
+			.navbar-brand1:hover
+			{
+				transition-duration: 0.5s;
+			}
+			
+			.submitButton
+			{
+				border: 2px solid black;
+				border-radius: 10px;
+				font-size: 20px;
+				background-color: transparent;
+				color: #111;
+				align-content: center;
+			}
+			.submitButton:hover
+			{
+				border: 2px solid black;
+				border-radius: 10px;
+				font-size: 20px;
+				background-color: #111;
+				color: #fff;
+				align-content: center;
+			}
+			.modal
+			{
+				background-color: black;
+			}
+			.modal-content
+			{
+				border-radius: 20px;
+				background-color: #2196f3;
+				color:#111;
+			}
+			.border-adjust
+			{
+				border:0px solid black;
+				border-radius: 10px;
+			}
+			.border-adjust1
+			{
+				border:1px solid black;
+				border-radius: 10px;
+			}
+			.myInfo
+			{
+				font-size: 18px;
+				font-weight: 2px solid;
+			}
+			.nav-header
+			{
+				font-size:34px;
+				text-decoration: underline;
+				border-bottom: 20px;
+			}
+			/*.delay1
+			{
+				animation-delay: 1s;
+				animation: mymove 2s;
+			}
+			@-webkit-keyframes mymove {
+				from {left: -60px;}
+				to {left: 0px;}
+			}
+
+			@keyframes mymove {
+				from {left: -60px;}
+				to {left: 0px;}
+			}
+
+			.delay2
+			{
+				animation-delay: 1.5s;
+				animation: imgmove 2s;
+			}
+			@-webkit-keyframes imgmove {
+				from {top: -560px;}
+				to {top: 0px;}
+			}
+
+			@keyframes imgmove {
+				from {top: -160px;}
+				to {top: 0px;}
+			}*/
+			.margin-adjust
+			{
+				margin-top: 10px;
+			}
+			.common-font
+			{
+				font-size:18px;
+			}
+			.card
+			{
+				background-image:url("");
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <div class="row">
+		<div class="col-sm-12 col-md-12"> --> 
+		<!-- A grey horizontal navbar that becomes vertical on small screens -->
+		<nav class="navbar navbar-expand-sm navbar-fixed-to">
+			<!-- Brand/logo -->
+  			<a class="navbar-brand navbar-brand1 font-weight-bold" href="#">BHAVIN NIRMAL</a>
+			<!-- Links -->
+			<div class="container">
+				<div class="navbar-collapse collapse justify-content-end">
+					<ul class="nav navmenu-1">
+						<li class="nav-item active"><a class="nav-link link-color" href="#">HOME</a></li>
+						<li class="nav-item"><a class="nav-link link-color js-scrol" href="#about">ABOUT</a></li>
+						<li class="nav-item"><a class="nav-link link-color" href="#service">SERVICES</a></li>
+						<li class="nav-item"><a class="nav-link link-color" href="#">WORK</a></li>
+						<li class="nav-item"><a class="nav-link link-color" href="#">CONTACT</a></li>
+						<li class="nav-item"><a class="nav-link link-color btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" href="#" style="border-radius: 10px;">ENQUIRY</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- </div>
+		</div> -->
+		<div id="about" class="container margin-adjust">
+			<div class="row">
+	  			<div class="col-md-12 col-sm-12">
+	  				<div class="card border-adjust">
+	  					<div class="card-body">
+	  						<div class="card-title nav-header"  data-aos="fade-up" data-aos-duration="2000">
+	  							<center>
+	  								<p class="font-weight-bold">ABOUT</p>
+	  							</center>
+	  						</div>
+	  						<div class="row">
+	  							<div class="col-sm-12 col-md-6 delay2"  data-aos="flip-left" data-aos-duration="2000">
+	  								<div class="card">
+										<img class="card-img-top" src="img/img_avatar3.png" alt="Card image">
+									</div>
+	  							</div>
+	  							<div class="col-sm-12 col-md-6 delay1" data-aos="fade-right" data-aos-duration="2000">
+	  								<span class="align-middle">
+	  								<p class="font-weight-bold">NAME: BHAVIN NIRMAL</p>
+	  								<p class="font-weight-bold">EMAIL: bhavinnirmal29@gmail.com</p>
+	  								<p class="font-weight-bold">CONTACT: +919819690323</p>
+	  								<p class="font-weight-bold">EDUCATION(PRESENT): BACHELOR IN ENGINEERING (IT)</p>
+	  								<p class="myInfo">I am an inquisitive and enthusiastic Software Engineer pursuing my bachelors. A web programmer requires knowledge of how the web works and how websites are being developed in the real world, since I have been developing web projects from 4 years, it gives me an edge over other developers. Apart from being a developer I am a strong team menber and capable of handling the clients in the real world. I am fluent in English speaking and I am keen towards learning new technologies.</p>
+	  								</span>
+	  							</div>
+	  						</div>	  						
+	  					</div>
+	  				</div>
+	  			</div>
+			</div>
+		</div>
+		<!-- Services  -->
+		<div id="service" class="container margin-adjust">
+			<div class="row">
+				<div class="col-sm-12 col-md-12">
+	  				<div class="card">
+	  					<div class="card-body">
+	  						<div class="card-title nav-header" data-aos="fade-right" data-aos-duration="1500">
+	  							<center>
+	  								<p class="font-weight-bold">SERVICES</p>
+	  							</center>
+	  						</div>
+	  						<div class="row">
+	  							<div class="col-sm-12 col-md-4 justify-content-center" data-aos="fade-right" data-aos-duration="3000">
+	  								<center>
+	  									<i class="material-icons" style="font-size:150px;color:red;">web</i>
+	  									<h3 class="margin-adjust">Website Development</h3>
+	  									<p class="common-font">Want to earn through Internet Marketing, then this can be a solution to increase your market. I develop responsive Websites Using Materialize Css, Bootstrap, HTML , CSS ,Javascript, Mysql Databases, PHP. I write clean code and develop user friendly website which makes it easy for people to use and can be accessed easily.<!-- I am enthusiastic in Website Development as it is one of my favourite domain and design dynamic and responsive websites.--></p>
+	  								</center>
+	  							</div>
+	  							<div class="col-sm-12 col-md-4 justify-content-center" data-aos="fade-up" data-aos-duration="3000">
+	  								<center>
+	  									<i class="fa fa-android" style="font-size:156px;color:green;"></i>
+	  									<h3 class="margin-adjust">Application Development</h3>
+	  									<p class="common-font">User-Friendly applications using Android Studio and Mysql Database. I help with database design of the entire Application. I develop dynamic softwares and user friendly which can be useful in all operating environments. </p>
+	  								</center>
+	  							</div>
+	  							<div class="col-sm-12 col-md-4" data-aos="fade-left" data-aos-duration="3000">
+	  								<center>
+	  									<i class="fa fa-database" style="font-size:156px;color:blue;"></i>
+	  									<h3 class="margin-adjust">Software Development</h3>
+	  									<p class="common-font">Developing Softwares as Projects which includes technologies like Python, Java and MySQL Database.I use Graphical User Interface options available wth different technology to develop softwares that are useful for a company or organization. I design dynamic applications to serve the best service to my clients.</p>
+	  								</center>
+	  							</div>
+	  						</div>
+	  					</div>
+	  				</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="container-fluid">
+			<div class="row">
+				<div class="col-md-3 text-center animate-box">
+					<span class="colorlib-counter js-counter" data-from="0" data-to="209" data-speed="4000" data-refresh-interval="50"></span>
+					<span class="colorlib-counter-label">Cups of coffee</span>
+				</div>
+				<div class="col-md-3 text-center animate-box">
+					<span class="colorlib-counter js-counter" data-from="0" data-to="20" data-speed="5000" data-refresh-interval="50"></span>
+					<span class="colorlib-counter-label">Projects</span>
+				</div>
+				<div class="col-md-3 text-center animate-box">
+					<span class="colorlib-counter js-counter" data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50"></span>
+					<span class="colorlib-counter-label">Clients</span>
+				</div>
+				<div class="col-md-3 text-center animate-box">
+					<span class="colorlib-counter js-counter" data-from="0" data-to="0" data-speed="5000" data-refresh-interval="50"></span>
+					<span class="colorlib-counter-label">Partners</span>
+				</div>
+			</div>
+		</div> -->
+		<!-- WORK -->
+		<div id="work" class="container margin-adjust">
+			<div class="row">
+				<div class="col-sm-12 col-md-12">
+	  				<div class="card-title nav-header">
+	  					<center>
+	  						<p class="font-weight-bold">WORK</p>
+	  					</center>
+	  				</div>
+	  			</div>
+	  		</div>
+		</div>
+		<div id="work" class="container margin-adjust">
+			<div class="row">
+				<div class="col-sm-12 col-md-12">
+	  				<div class="card">
+	  					<div class="card-body">
+	  						<div class="card-title nav-header">
+	  							<center>
+	  								<p class="font-weight-bold">SKILLS</p>
+	  							</center>
+	  						</div>
+	  						<div class="row">
+	  							<center>
+	  							<p class="common-font">
+	  								The skills that I learnt till now are mentioned below which helped me improve in the field of Web Development and Software Development. The skills that I possess are true and written below.
+	  							</p>
+	  							</center>
+	  						</div>
+	  						<div class="row">
+	  							<div class="col-sm-12 col-md-4">
+	  								<div class="progress-wrap">
+										<h3>Java</h3>
+										<div class="progress">
+								 			<div class="progress-bar color-1" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+								    			<span>80%</span>
+								  			</div>
+										</div>
+									</div>
+	  							</div>
+	  							<div class="col-sm-12 col-md-4">
+	  								<div class="progress-wrap">
+										<h3>jQuery</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+										   		<span>80%</span>
+								  			</div>
+										</div>
+									</div>
+	  							</div>
+	  							<div class="col-sm-12 col-md-4">
+	  								<div class="progress-wrap">
+										<h3>HTML5</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="95"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
+										  	  <span>95%</span>
+								  			</div>
+										</div>
+									</div>
+	  							</div>
+	  						</div>
+	  						<div class="row margin-adjust">
+	  							<div class="col-sm-12 col-md-4">
+	  								<div class="progress-wrap">
+										<h3>CSS3</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+										    	<span>90%</span>
+										  	</div>
+										</div>
+									</div>
+	  							</div>
+	  							<div class="col-sm-12 col-md-4">
+	  								<div class="progress-wrap">
+										<h3>Python</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+										   		<span>85%</span>
+										  	</div>
+										</div>
+									</div>
+	  							</div>
+	  							<div class="col-sm-12 col-md-4">
+	  								<div class="progress-wrap">
+										<h3>C,C++</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="90"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+										    	<span>90%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row margin-adjust">
+								<div class="col-sm-12 col-md-4">
+									<div class="progress-wrap">
+										<h3>Netbeans</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+										    <span>75%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-4">
+									<div class="progress-wrap">
+										<h3>JSP</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+										    <span>75%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-4">
+									<div class="progress-wrap">
+										<h3>PHP</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+										    <span>85%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+	  						</div>
+	  					</div>
+	  				</div>
+	  			</div>
+			</div>
+		</div>
+		<!-- <div id="skills" class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-12">
+			
+						<center>
+							<p class="font-weight-bold">SKILLS</p>
+							<h5>The skills that I learnt till now are mentioned below which helped me improve in the field of Web Development and Software Development. The skills that I possess are true and written below.</h5>
+						</center>
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>Java</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="80"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+								    <span>80%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="row">
+		</div> -->
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content justify-content-center">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modalTitle">Send An Enquiry</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form action="#">
+							<div class="form-group">
+								<label for="name">Name:</label><br>
+								<input type="text" class="form-control" id="name1">
+							</div>
+							<div class="form-group">
+								<label for="email">Email address:</label>
+								<input type="email" class="form-control" id="email">
+							</div>
+							<div class="form-group">
+								<label for="name">Contact Number:</label>
+								<input type="number" class="form-control" id="phone">
+							</div>
+							<div class="form-group">
+								<label for="message">Message:</label>
+								<textarea class="form-control" id="msg"></textarea>
+							</div>
+							<center>
+								<button type="submit" class="btn btn-primary submitButton">SUBMIT</button>
+							</center>
+						</form>
+					</div>
+					<div class="modal-footer justify-content-center">
+						<button type="button" class="btn btn-primary submitButton" data-dismiss="modal">CLOSE</button>
+					</div>
+				</div>
+			</div>
+		</div>	
+		
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- Animation Script  -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		  AOS.init();
+		//Nav Active
+		$('.navmenu-1').on('click','li',function(){
+			$('.navmenu-1 li.active').removeClass('active');
+			$(this).addClass('active');
+		});
+
+		//Modal Popup
+		$('#myModal').on('shown.bs.modal', function () {
+  			$('#myInput').trigger('focus')
+		});
+
+		$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 500, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+	</script>
+	</body>
+</html>
+
